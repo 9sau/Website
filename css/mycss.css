@@ -1,0 +1,27 @@
+.thumbnail
+{
+height:350px;
+width:250px;
+float:left;
+padding:30px;
+margin-top:20px;
+margin-bottom:20px;
+}
+.thumbnail img
+{
+border-radius:50%;
+}
+.row
+{
+margin:10px;
+}
+.body
+{
+padding-right:400px;
+}
+.btn
+{
+width:200px;
+padding:10px;
+margin-left:-15px;
+}

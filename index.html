@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+
+
+<!-- Latest compiled and minified JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>	
+
+<title>
+	Database Project
+</title>
+
+<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Database Project</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form" name="sign_in" onsubmit="return check();" method="get" action="user_profile.php">
+            <div class="form-group">
+              <input type="text" maxlength="32" id="login_username" name="login_username" placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" maxlength="32" id="login_password" name="login_password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" name="login" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+		<hr>
+		<div class="jumbotron">
+		<div class="container">
+			<div class="col-xs-8">
+			<form class="form-horizontal" role="form" name="sign_up" onsubmit="return validate();" method="get" action="user_profile.php">
+				<div class="form-group">
+					<label id="h01">First Name</label>
+					<input type="text" maxlength="32" class="form-control" id="fname" name="fname" placeholder="First name">
+				</div>
+				
+				<div class="form-group">
+					<label>Last Name</label>
+					<input type="text" maxlength="32" class="form-control" id="lname" name="lname" placeholder="Enter your last name">
+				</div>
+				
+				<div class="form-group">
+					<label>Date of Birth</label>
+					<input type="date" maxlength="10" class="form-control" id="dob" name="dob" placeholder="When is your Birthday (yyyy-mm-dd)">
+				</div>
+				
+				<div class="form-group">
+					<label>Select a username</label>
+					<input type="text" maxlength="32" class="form-control" id="uid" name="uid" placeholder="Choose a unique name">
+				</div>
+				
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" maxlength="32" class="form-control" id="reg_password" name="reg_password" placeholder="Enter a strong password">
+				</div>
+				
+				<div>
+					<button type="submit" name="reg_submit" class="btn btn-success btn-lg">Submit</button>
+					<button type="reset"  class="btn btn-success btn-lg">Reset</button>
+				</div>
+			</form>
+			</div>
+			<div class="border">
+			
+			<div class="col-xs-4">
+				Band Registration 
+			<div>
+		</div>
+		</div>
+	
+	  <footer class="footer navbar-fixed-bottom" align="right">
+      <div class="container-fluid">
+        <p class="text-muted">&copy; Project compiled by Nitin Wagadia and Saurabh Jain at NYU Poly for the Course Principles and Design of Database</p>
+      </div>
+    </footer>
+</body>
+</html>
